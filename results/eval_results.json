@@ -1,0 +1,20 @@
+[
+  {
+    "name": "MLP  [64,32,16]  emb=32",
+    "recall": 0.1292,
+    "ndcg": 0.1978,
+    "params": 308896
+  },
+  {
+    "name": "GMF-only         emb=32",
+    "recall": 0.1456,
+    "ndcg": 0.2205,
+    "params": 306304
+  },
+  {
+    "name": "NeuMF [64,32,16]  emb=32  (pretrained)",
+    "recall": 0.1466,
+    "ndcg": 0.2215,
+    "params": 615200
+  }
+]
