@@ -50,6 +50,20 @@ CONFIGS = [
     "checkpoint_path": "checkpoints/neumf_64_32_16.pt",
     "history_path" : "results/train_neumf_64_32_16.json",
     "seed" : 42,
+    },
+    {
+    "ratings_path" : "../data/ml-1m/ratings.dat",
+    "batch_size" : 256,
+    "neg_ratio" : 4,
+    "model_type" : "neumf",        
+    "num_factors" : 32,           
+    "layers" : [128, 64, 32],   
+    "lr" : 0.001,
+    "epochs" : 20,
+    "patience" : 5,
+    "checkpoint_path": "/checkpoints/neumf_128_64_32.pt",
+    "history_path" : "results/train_neumf_128_64_32.json",
+    "seed" : 42,
     }
 ]
 
