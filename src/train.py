@@ -13,7 +13,7 @@ CONFIG = {
     "model_type"     : "neumf",
     "num_factors"    : 32,
     "layers"         : [64, 32, 16],
-    "lr"             : 0.0001,
+    "lr"             : 0.0005,
     "epochs"         : 20,
     "patience"       : 10,
     "checkpoint_path": "checkpoints/neumf_32.pt",
