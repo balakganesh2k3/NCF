@@ -1,5 +1,5 @@
 # calculates recall@10 and NDCG@10 metrics 
-from dataset import build_dataloaders
+from dataset import build_data
 from model import gmf_lay, mlp_lay, neumf_lay
 import os
 import numpy  as np
@@ -50,7 +50,7 @@ configs = [
 def eval():
 # load the data and build dataloaders
     print("\nloading data")
-    train_loader, val_loader, test_loader, num_users, num_items, user_history = build_dataloaders(
+    train_loader, val_loader, test_loader, num_users, num_items, user_history = build_data(
         filepath = "./data/ml-1m/ratings.dat",
         batch_size = 256,
         neg_ratio = 4,
